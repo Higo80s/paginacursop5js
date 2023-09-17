@@ -1,3 +1,5 @@
+![image](https://github.com/Higo80s/paginacursop5js/assets/108965699/10a77916-5caf-4050-a4ed-c04c8682c4c6)
+
 Projeto de Estudo de CSS
 Este projeto é um exemplo de como usar HTML, CSS e JavaScript para criar uma página web interativa sobre um curso de p5.js, uma biblioteca de JavaScript para criar arte e animação interativas.
 
