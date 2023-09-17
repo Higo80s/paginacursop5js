@@ -1,0 +1,77 @@
+/* Seletores básicos */
+body {
+    background-color: black; /* Cor de fundo do corpo do documento */
+    font-family: Arial, sans-serif; /* Fonte padrão dos elementos de texto */
+}
+
+h1 {
+    color: lightgreen; /* Cor do título */
+    text-align: center; /* Alinhamento do texto no centro */
+}
+
+p {
+    color: lightgreen; /* Cor dos parágrafos */
+    text-align: justify; /* Alinhamento do texto justificado */
+}
+
+/* Seletores combinados */
+header p {
+    font-style: italic; /* Estilo da fonte em itálico */
+    color: lightsalmon;
+}
+
+footer p {
+    font-weight: bold; /* Peso da fonte em negrito */
+}
+
+/* Pseudo-elementos */
+header::after {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Tipo de exibição em bloco */
+    width: 80%; /* Largura de 80% da largura do elemento pai */
+    height: 2px; /* Altura de 2 pixels */
+    margin: 10px auto; /* Margem de 10 pixels na parte superior e inferior, e centralizada na horizontal */
+    background-color: lightgreen; /* Cor de fundo vermelha */
+}
+
+footer::before {
+    content: ""; /* Conteúdo vazio */
+    display: block; /* Tipo de exibição em bloco */
+    width: 80%; /* Largura de 80% da largura do elemento pai */
+    height: 2px; /* Altura de 2 pixels */
+    margin: 10px auto; /* Margem de 10 pixels na parte superior e inferior, e centralizada na horizontal */
+    background-color: lightgray; /* Cor de fundo vermelha */
+}
+
+/* Modelo de caixa */
+#sketch {
+    width: 80vw; /* Largura de 80% do viewport */
+    height: 50vh; /* Altura de 50% do viewport */
+    margin: 20px auto; /* Margem de 20 pixels na parte superior e inferior, e centralizada na horizontal */
+    border: 1px solid lightgoldenrodyellow; /* Borda de 1 pixel sólida vermelha */
+    border-radius: none;
+    margin-top: 10%;
+    cursor:pointer;
+}
+
+/* Posicionamento */
+header {
+    position: fixed; /* Posição fixa no documento */
+    top: 0; /* Distância de zero pixels da borda superior do documento */
+    left: 0; /* Distância de zero pixels da borda esquerda do documento */
+    right: 0; /* Distância de zero pixels da borda direita do documento */
+}
+
+footer {
+    position: fixed; /* Posição fixa no documento */
+    bottom: 0; /* Distância de zero pixels da borda inferior do documento */
+    left: 0; /* Distância de zero pixels da borda esquerda do documento */
+    right: 0; /* Distância de zero pixels da borda direita do documento */
+}
+
+@media (max-width: 600px) {
+  #sketch {
+    width: 100vw; /* Largura de 100% do viewport */
+    height: 100vh; /* Altura de 100% do viewport */
+  }
+}
